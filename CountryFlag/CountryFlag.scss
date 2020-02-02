@@ -1,0 +1,58 @@
+@import "../../scss/common";
+
+$block: "pb-country-flag";
+
+.#{$block}__content{
+    background-color: $c-white;
+    border: $border-width $border-style $c-border;
+    border-radius: $border-radius-l;
+    padding: $space-s;
+    position: absolute;
+    width: $size-avatar-xxl;
+
+    .#{$block}__content-image{
+        float: left;
+        height: $height-logo-s;
+        margin-right: $space-m;
+        width: $height-logo-s;
+    }
+
+    .pb-caret{
+        float: right;
+        padding-right: $space-l;
+    }
+}
+
+.#{$block}__label {
+    font-family: $font-family;
+    font-weight: $font-weight-bold;
+}
+
+.#{$block}__countries{
+    background-color: $c-white;
+    border: $border-width $border-style $c-border;
+    border-radius: $border-radius-l;
+    margin: 0;
+    position: relative;
+    top: $space-m;
+    width: $size-avatar-xxl;
+
+    .#{$block}__countries-list{
+        cursor: pointer;
+        list-style-type: none;
+        margin: 0;
+        padding: $space-s;
+
+        &:hover{
+            background-color: $c-link-lighter;
+        }
+    }
+
+    .#{$block}__countries-image{
+        float: left;
+        height: $height-logo-s;
+        margin-right: $space-m;
+        width: $height-logo-s;
+    }
+
+}

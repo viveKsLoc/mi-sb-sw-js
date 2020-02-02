@@ -1,0 +1,56 @@
+@import "../../scss/common";
+
+$block: "pb-country-text-overlay";
+
+.#{$block}{
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    -webkit-box-shadow: $box-shadow-l3;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    background-color: $c-overlay;
+    bottom: 0;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow-l3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin-top: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+    .pb-halver{
+        min-height: $size-xxl;
+        width: $size-xxxl;
+    }
+
+    .pb-halver__content{
+        background-color: $c-overlay-2;
+        padding: $size-xs;
+    }
+
+    .pb-svg-icon--type-globe-1 {
+        height: $size-icon-xl;
+        object-fit: contain;
+        width: $size-icon-xl;
+    }
+
+    .#{$block}__title {
+        color: $c-white;
+        font-family: $font-family-alt;
+        font-size:$size-avatar-m;
+    }
+
+    .#{$block}__text {
+        color: $c-white;
+        font-family: $font-family;
+        font-size:$size-xxxs;
+    }
+
+}

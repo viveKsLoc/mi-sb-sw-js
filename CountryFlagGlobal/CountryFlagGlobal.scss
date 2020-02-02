@@ -1,0 +1,198 @@
+@import "../../scss/common";
+
+$block: "pb-country-flag-global";
+
+.#{$block}__top-division {
+    margin-bottom: $size-xxxs;
+}
+
+.#{$block}--overlay--dark {
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    background-color: $c-overlay;
+    bottom: 0;
+    left: 0;
+    margin-top: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+.#{$block}__container {
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    align-items: center;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    margin-top: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 110;
+}
+
+.#{$block}__bounds {
+    -webkit-box-shadow: $box-shadow-l3;
+    border-radius: $border-radius-s;
+    box-shadow: $box-shadow-l3;
+    position: relative;
+}
+
+.#{$block}__wrapper {
+    max-width: $size-xxxl;
+}
+
+.#{$block}__content {
+    border-radius: $border-radius-s;
+    display: block;
+    position: relative;
+}
+
+.#{$block}__background-img {
+    background-position: center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: $size-xxxl;
+    min-height: $size-xxl;
+}
+
+.#{$block}__first {
+    background-color: $c-overlay-2;
+    float: left;
+    height: $size-xxl;
+    padding: $size-xs;
+    width: $width-half;
+
+    .pb-svg-icon--type-globe-1 {
+        height: $size-icon-xl;
+        object-fit: contain;
+        width: $size-icon-xl;
+    }
+
+    .#{$block}__side-content-heading {
+        color: $c-white;
+        font-family: $font-family-alt;
+        font-size:$size-avatar-m;
+    }
+
+    .#{$block}__side-content-text {
+        color: $c-white;
+        font-family: $font-family;
+        font-size:$size-xxxs;
+    }
+}
+
+.#{$block}__last {
+        background: $c-white;
+        float: left;
+        height: $size-xxl;
+        margin-top: 0;
+        overflow: scroll;
+        padding: $size-xs;
+        width: $width-half;
+}
+
+.#{$block}--disabled {
+    pointer-events: none;
+
+    .#{$block}__bottom-division {
+       opacity: $opacity-disabled-dark;
+    }
+}
+
+.flag-select .selected--flag--option {
+    padding: $space-m $size-icon-xl;
+}
+
+.#{$block}__top-division-content {
+    height: $size-icon-l;
+    padding: $size-xxxs;
+
+    .#{$block}__top-division-content-text {
+        cursor: pointer;
+        font-family: $font-family-rare-language-fallbacks;
+        font-size: $size-xxxs;
+        font-weight: normal;
+        line-height: normal;
+        margin-left: $space-s;
+    }
+
+    .#{$block}__top-division-content-image{
+        float: left;
+        height: $height-logo-s;
+        width: $height-logo-s;
+    }
+}
+
+.#{$block}__top-division-header {
+    color: $c-text-light;
+    font-family: $font-family;
+    font-size: $size-icon-s;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    letter-spacing: $letter-spacing-caps;
+}
+
+.#{$block}__bottom-division-header {
+    color: $c-text-light;
+    font-family: $font-family;
+    font-size: $size-icon-s;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: $font-weight-bold;
+    letter-spacing: $letter-spacing-caps;
+    line-height: normal;
+}
+
+.#{$block}__bottom-division-content {
+    border: $border-width $border-style $c-white;
+    cursor: pointer;
+    float: left;
+    height: $size-icon-l;
+    padding: $size-icon-s;
+    width: $width-half;
+
+    &:hover{
+        border: $border-width $border-style $c-info-light;
+    }
+
+    .#{$block}__bottom-division-content-text {
+        font-family: $font-family-rare-language-fallbacks;
+        font-size: $size-xxxs;
+        margin-left: $space-m;
+    }
+
+    .#{$block}__bottom-division-content-image {
+        float: left;
+        height: $height-logo-s;
+        width: $height-logo-s;
+    }
+}
+
+.#{$block}__all-content {
+    float: left;
+    padding: $size-icon-s;
+    width: $width-half;
+
+    .#{$block}__all-content-text {
+        cursor: pointer;
+        font-family: $font-family-rare-language-fallbacks;
+        font-size: $size-xxxs;
+        margin-left: $space-s;
+    }
+
+    .#{$block}__all-content-image{
+        float: left;
+    }
+}
+
